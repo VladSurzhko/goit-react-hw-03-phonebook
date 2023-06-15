@@ -6,6 +6,9 @@ import ContactForm from "components/ContactForm/ContactForm.jsx";
 import Filter from "components/Filter/Filter.jsx";
 import ContactList from "components/ContactList/ContactList";
 
+
+const  Key = "contactss"
+
 class Phonebook extends Component {
   state = {
     contacts: [],
@@ -15,7 +18,7 @@ class Phonebook extends Component {
 
 
   componentDidMount() {
-    const storedContacts = localStorage.getItem("contactss");
+    const storedContacts = localStorage.getItem(Key);
     if (storedContacts) {
       this.setState({ contacts: JSON.parse(storedContacts) });
     }
