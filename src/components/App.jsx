@@ -124,12 +124,12 @@ export const App = () => {
    
 
       <Phonebook
-        state={{
-          contacts: [],
-          filter: '',
-          name: '',
-          number: ''
-        }}
+        // state={{
+        //   contacts: [],
+        //   filter: '',
+        //   name: '',
+        //   number: ''
+        // }}
       />
     </div>
   );
